@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>PNRValidator</title>
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+    </head>
+    <body>
+        <div style="text-align:center;">
+
+
+            <form action="Validate" method="GET">
+                <label>Type of number to validate: </label>
+                <select name="typeOfValid">
+                    <option value="PESEL">PESEL</option>
+                    <option value="NIP">NIP</option>
+                    <option value="REGON">REGON</option>
+                </select>
+
+                <p>Number: <input type=text size=20 name=number></p>
+                <input type="submit" value="Validate" />
+            </form>
+            <br />
+            <form action="History" method="GET">
+                <input type="submit" value="History" />
+            </form>
+
+
+        </div>
+    </body>
+</html>
